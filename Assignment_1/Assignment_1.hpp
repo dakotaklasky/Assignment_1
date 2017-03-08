@@ -60,27 +60,29 @@ private:
 
 class Hand {
 public:
-    // A vector of Cards
     Hand();
-    
-    // You decide what functions you'll need...
+    void draw();
+    void bust();
     
 private:
-    // You decide what fields you'll need...
+    std::vector<Card> hand;
 };
+    
+
 
 
 class Player {
 public:
-    // Constructor.
-    //    Assigns initial amount of money
-    Player(int m);
     
-    // You decide what functions you'll need...
+    Player(int m);
+    void collect();
     
 private:
     int money;
-    // You decide what extra fields (if any) you'll need...
+    int endmoney;
+    
 };
+    
+
 
 #endif
