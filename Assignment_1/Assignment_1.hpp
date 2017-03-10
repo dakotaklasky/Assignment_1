@@ -11,7 +11,7 @@
 #ifndef CARDS_H
 #define CARDS_H
 
-
+using namespace std; 
 
 enum suit_t {OROS, COPAS, ESPADAS, BASTOS};
 
